@@ -11,6 +11,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+@Entity
 public class Reservation extends AbstractEntity<ReservationId> {
 
     @AttributeOverride(name = "id", column = @Column(name = "flight_id", nullable = false))

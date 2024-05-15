@@ -1,10 +1,12 @@
 package mk.finki.ukim.emt.reservationmanagement.domain.model;
 
+import jakarta.persistence.Entity;
 import lombok.NonNull;
 import mk.finki.ukim.emt.reservationmanagement.domain.valueobjects.EmailAddress;
 import mk.finki.ukim.emt.reservationmanagement.domain.valueobjects.PhoneNumber;
 import mk.finki.ukim.emt.sharedkernel.domain.base.AbstractEntity;
 
+@Entity
 public class Passenger extends AbstractEntity<PassengerId> {
 
     private String name;
@@ -16,5 +18,9 @@ public class Passenger extends AbstractEntity<PassengerId> {
         this.name = name;
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
+    }
+
+    public Passenger() {
+
     }
 }
