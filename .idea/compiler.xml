@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="reservation-management" />
         <module name="shared-kernel" />
+        <module name="payment-list" />
         <module name="ddd-plane-tickets" />
         <module name="flight-list" />
       </profile>
@@ -17,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="flight-list" options="-parameters" />
+      <module name="payment-list" options="-parameters" />
       <module name="reservation-management" options="-parameters" />
       <module name="shared-kernel" options="-parameters" />
     </option>

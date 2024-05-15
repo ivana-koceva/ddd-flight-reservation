@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/shared-kernel/pom.xml" />
         <option value="$PROJECT_DIR$/flight-list/pom.xml" />
         <option value="$PROJECT_DIR$/reservation-management/pom.xml" />
+        <option value="$PROJECT_DIR$/payment-list/pom.xml" />
       </list>
     </option>
   </component>

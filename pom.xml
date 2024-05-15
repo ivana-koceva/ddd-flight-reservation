@@ -18,5 +18,6 @@
         <module>shared-kernel</module>
         <module>flight-list</module>
         <module>reservation-management</module>
+        <module>payment-list</module>
     </modules>
 </project>
