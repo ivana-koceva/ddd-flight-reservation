@@ -10,8 +10,8 @@ public interface FlightService {
 
     Flight findById(FlightId id);
     Flight createFlight(FlightForm form);
-    Flight seatTaken(FlightId productId, int qty);
-    Flight seatRemoved(FlightId productId, int qty);
+    Flight seatTaken(FlightId productId);
+    Flight seatRemoved(FlightId productId);
     List<Flight> getAll();
 
 }

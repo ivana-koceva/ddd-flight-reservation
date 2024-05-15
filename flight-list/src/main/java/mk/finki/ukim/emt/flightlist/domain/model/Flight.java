@@ -37,12 +37,12 @@ public class Flight extends AbstractEntity<FlightId> {
         return f;
     }
 
-    public void addSeat(int qty) {
-        this.availableSeats = this.availableSeats + qty;
+    public void addSeat() {
+        this.availableSeats += 1;
     }
 
-    public void removeSeat(int qty) {
-        this.availableSeats -= qty;
+    public void removeSeat() {
+        this.availableSeats -= 1;
     }
 
 

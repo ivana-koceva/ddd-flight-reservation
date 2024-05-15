@@ -33,17 +33,17 @@ public class FlightServiceImpl implements FlightService {
     }
 
     @Override
-    public Flight seatTaken(FlightId flightId, int qty) {
+    public Flight seatTaken(FlightId flightId) {
         Flight f = flightRepository.findById(flightId).orElseThrow(FlightNotFoundException::new);
-        f.removeSeat(qty);
+        f.removeSeat();
         flightRepository.saveAndFlush(f);
         return f;
     }
 
     @Override
-    public Flight seatRemoved(FlightId flightId, int qty) {
+    public Flight seatRemoved(FlightId flightId) {
         Flight f = flightRepository.findById(flightId).orElseThrow(FlightNotFoundException::new);
-        f.addSeat(qty);
+        f.addSeat();
         flightRepository.saveAndFlush(f);
         return f;
     }
