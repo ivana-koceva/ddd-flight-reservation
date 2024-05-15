@@ -2,6 +2,7 @@ package mk.finki.ukim.emt.flightlist.domain.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.Getter;
 import mk.finki.ukim.emt.flightlist.domain.valueobjects.AvailableSeats;
 import mk.finki.ukim.emt.sharedkernel.domain.base.AbstractEntity;
 import mk.finki.ukim.emt.sharedkernel.domain.financial.Money;
@@ -10,6 +11,7 @@ import java.util.Date;
 
 @Entity
 @Table(name="flight")
+@Getter
 public class Flight extends AbstractEntity<FlightId> {
 
     private String DepartureCity;
